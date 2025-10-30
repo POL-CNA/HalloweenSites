@@ -1,0 +1,160 @@
+/* Enemy Styles */
+.enemy.vine {
+    background: url('vine.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+.enemy.ghost {
+    background: url('ghost.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+.enemy.bat {
+    background: url('bat.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+.enemy.boss {
+    background: url('boss.png') no-repeat center;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+}
+
+/* Defender Styles */
+.pumpkin {
+    background: url('pumpkin.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+.firepumpkin {
+    background: url('firepumpkin.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+.icepumpkin {
+    background: url('icepumpkin.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+/* Projectile Styles */
+.bullet {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.fireball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.iceball {
+    width: 20px;
+    height: 20px;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+/* Wave Progress Bar */
+#wave-container, #boss-container {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#wave-bar, #boss-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#wave-fill {
+    height: 100%;
+    width: 0%;
+    background-color: orange;
+    transition: width 0.3s;
+}
+
+#boss-fill {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+/* Fast Pumpkin */
+.fastpumpkin {
+    background: url('fastpumpkin.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+/* Explosive Pumpkin */
+.explosivepumpkin {
+    background: url('explosivepumpkin.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+/* Candy Generator */
+.candygen {
+    background: url('candygen.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+/* Spiky Pumpkin */
+.spikypumpkin {
+    background: url('spikypumpkin.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+/* Sniper Pumpkin */
+.sniperpumpkin {
+    background: url('sniperpumpkin.png') no-repeat center;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+/* Bomb (Explosive Pumpkin) */
+.bomb {
+    width: 25px;
+    height: 25px;
+    background-color: darkred;
+    border-radius: 50%;
+    box-shadow: 0 0 10px red;
+}
+
+/* Sniper Bullet */
+.sniper {
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+    border-radius: 50%;
+    box-shadow: 0 0 5px yellow;
+}

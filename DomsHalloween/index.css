@@ -1,0 +1,71 @@
+h1 {
+    color: rgb(241, 143, 13);
+    font-family: fonts2;
+}
+
+p {
+    font-family: 'fonts';
+}
+
+@font-face {
+    font-family: 'fonts';
+    src: url('fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  }
+@font-face {
+    font-family: fonts2;
+    src: url('fonts2/BitcountGridSingle-Regular.ttf');
+}
+
+h1, p, button, ul, a, img {
+    position: relative;
+    z-index: 1;
+}
+
+.side-buttons {
+    position: fixed;
+    top: 90%;
+    right: 0px; /* change to right: 20px; if you want it on the right side */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    background: url("halloween.gif") no-repeat center bottom fixed;
+    background-size:cover
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* controls how faint it looks */
+    pointer-events: none; /* allows clicks through the overlay */
+    z-index: 0; /* behind text */
+}
+
+button {
+    background-color: #003366;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 8px #0050ff80;
+    width: auto;
+}
+
+button:hover {
+    background-color: #004c99;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #0077ffcc;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🎃 Pumpkin Defense 2.0</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #000;
+    color: white;
+    font-family: "Comic Sans MS", cursive;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  h1 { margin: 10px 0; }
+
+  #game {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    background: url('pumpkinfield.jpg') no-repeat center/cover;
+    border: 3px solid orange;
+  }
+
+  .cell {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(255,165,0,0.2);
+  }
+
+  .pumpkin, .firepumpkin {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 10px;
+    background: url('pumpkin.png') no-repeat center/cover;
+  }
+
+  .firepumpkin {background: url('firepumpkin.png') no-repeat center/cover;}
+
+  .enemy {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 0;
+  }
+
+  .vine {background: url('vine.png') no-repeat center/cover; }
+  .ghost {background: url('ghost.png') no-repeat center/cover; opacity: 0.7; }
+  .bat {background: url('bat.png') no-repeat center/cover; opacity: 0.7;}
+
+  .bullet {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: orange;
+  }
+
+  .fireball {
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  #hud {
+    margin: 10px;
+  }
+
+  #shop button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff6600;
+    color: white;
+    transition: all 0.2s;
+  }
+
+  #shop button:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+<a href="index.html">Go Back</a>
+<h1>🎃 Pumpkin Defense 2.0</h1>
+<div id="hud">Candy: <span id="candy">150</span></div>
+<div id="wave-display">Wave: 1</div>
+
+<div id="shop">
+  <button onclick="selectDefender('pumpkin', 50)">🟠 Pumpkin (50)</button>
+  <button onclick="selectDefender('firepumpkin', 100)">🔥 Fire Pumpkin (100)</button>
+  <button onclick="selectDefender('icepumpkin', 150)">❄️ Ice Pumpkin (150)</button>
+  <button onclick="selectDefender('fastpumpkin', 80)">⚡ Fast Pumpkin (80)</button>
+  <button onclick="selectDefender('explosivepumpkin', 150)">💣 Explosive Pumpkin (150)</button>
+  <button onclick="selectDefender('candygen', 120)">🍬 Candy Generator (120)</button>
+  <button onclick="selectDefender('spikypumpkin', 100)">🛡️ Spiky Pumpkin (100)</button>
+  <button onclick="selectDefender('sniperpumpkin', 200)">🎯 Sniper Pumpkin (200)</button>
+</div>
+
+<!-- Wave Progress Bar -->
+<div id="wave-container">
+  <label>Wave Progress:</label>
+  <div id="wave-bar">
+      <div id="wave-fill"></div>
+  </div>
+</div>
+
+<!-- Boss HP Bar -->
+<div id="boss-container" style="display:none;">
+  <label>Boss HP:</label>
+  <div id="boss-bar">
+      <div id="boss-fill"></div>
+  </div>
+</div>
+
+<div id="game"></div>
+  <script src="game.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+</html>
+
+
+
+
