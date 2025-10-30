@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href = "Stylesheet.css">
+
+<head>
+     <title>Halloween</title>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap" rel="stylesheet">
+</head>
+
+<style>
+	body {
+	  height: 100%; 
+	  background: linear-gradient( darkorange 200px, orange 100%);
+	}
+
+	.line {
+    	display: flex;
+ 		justify-content: space-between; /* Pushes text to opposite sides */
+    	align-items: center;
+    	width: 100%;
+    	font-family: Arial, sans-serif;
+  	}
+
+	.spooky {
+		font-size: 20px;
+		border: 8px ridge gray;
+		background-color: white;
+		border-radius: 20px;
+		padding: 10px;
+		margin-top: -5px;
+	}
+
+	.img {
+      	border: 4px dashed rgb(124, 25, 99);
+	 	border-radius: 10%;
+		scale: 1.5;
+    }
+
+	.button{
+		border-radius:10%;
+		background-color: grey;
+		width: 20%;
+		height: 80px;
+		font-family: "Momo Signature", cursive;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.flag{
+		height: 100px;
+		width:150px;
+	}
+
+	.momo {
+		font-family: "Momo Signature", cursive;
+		font-weight: 400;
+		font-style: normal;
+	}
+</style>
+
+<body>
+
+	<pre class = "line" style="text-align: center; background-color: darkorange; ">
+		<img class = "flag" src="flag.jpg" style = "margin-top: -10px; margin-bottom: 10px;">
+		<img class = "flag" src="belgium.jpg" style = "margin-top: -10px; margin-bottom: 10px;">
+		<img class = "flag" src="germierflag.jpg" style = "margin-top: -10px; margin-bottom: 10px;">
+	    <h1 class = "momo" style="font-size:60px;">Sint Maarten's Day</h1>
+		<img class = "flag" src="france.jpg" style = "margin-top: -10px; margin-bottom: 10px;">
+		<img class = "flag" src="imhungry.jpg" style = "margin-top: -10px; margin-bottom: 10px;">
+		<img class = "flag" src="stmaartenflag.jpg" style = "margin-top: -10px; margin-bottom: 10px;">
+	</pre>
+	<p style="margin-top:-40px; font-size:35px;">
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	</p>
+
+	<div class="line">
+		<img class="img" src="HalloweenPicture2.jpg" alt="Another picture of kids walking with decorated lant" style="margin-left: 80px;">
+		<p class="spooky" style="margin-right: 120px; margin-left:120px;">In the Netherlands, people don’t celebrate Halloween in the same way it’s celebrated in America. Instead, they have a similar holiday called St. Maarten’s Day, which takes place on November 11th. On this day, children go from door to door carrying colorful homemade lanterns, singing traditional songs, and receiving small treats like candy or fruit in return.</p>
+		<img class="img" src="HalloweenPicture1.jpg" alt="Picture of kids with decorated lanterns." style="margin-right: 80px;">
+	</div>
+	<div class="line">
+
+		<p class="spooky"style="margin-left:450px; margin-right:450px; margin-top:40px;">The celebration is rooted in the story of Saint Martin of Tours, a kind soldier who shared his cloak with a beggar during a snowstorm. While it doesn’t involve spooky costumes or haunted houses like Halloween, St. Maarten’s Day shares the same spirit of community, generosity, and fun for children.</p>
+	</div>
+
+	<pre style ="text-align: center;">
+		<h1><br>Other Traditions</h1>
+	</pre>
+
+
+
+	<script>	
+		function buttonclicked(tab) {		
+			let name = ["Foods","Location","IDK"];
+			let text = ["In many regions, especially in the north of the Netherlands, people enjoy seasonal autumn foods such as erwtensoep (a thick pea soup made with sausage and vegetables) or stamppot (a hearty mashed potato dish mixed with greens like kale or sauerkraut). Some other common foods are.","Although each country celebrates everything differently, the netherlands isn't the only country that celebrates St Maarten's Day. For example:"]
+			let images = ['<img src="foodimg.jpg" style="margin-top:40px; margin-right:30px; border:none;">','<img src="map.jpg" style="margin-top:40px; margin-right:30px; border:none; height:170px;">']
+			let lists = ['<li>Goose or Duck</li><li>Crab and Saltfish</li><li>Glühwein (mulled wine)</li>','<li>Netherlands</li><li>Belgium</li><li>Germany</li><li>France</li><li>Hungary</li><li>Sint Maarten Islands</li>']
+			document.getElementById("buttonText").innerHTML = name[tab-1];
+			document.getElementById("textText").innerHTML = text[tab-1];
+			document.getElementById("imgText").innerHTML = images[tab-1];
+			document.getElementById("listText").innerHTML = lists[tab-1];
+			document.getElementById("button1").style.backgroundColor = "gray";
+			document.getElementById("button2").style.backgroundColor = "gray";
+			document.getElementById("button" + tab).style.backgroundColor = "lime";
+		} 
+	</script>
+
+	<div style="text-align: center; font-size: 0px;">
+		<button id="button1" class="button" style="background-color: lime;"onclick="buttonclicked(1)">
+			<p style="font-size:20px; text-align: center;">Foods</p>
+		</button>
+		<button id="button2" class="button" onclick="buttonclicked(2)">
+			<p style="font-size:20px; text-align: center;">Location</p>
+		</button>
+	</div>
+
+	<div style="text-align:center; margin-top: -10px;">
+		<button disabled style="border-color: black; text-align: center; width: 80%; height: 300px; border-radius:50px; background-color: white; border-width: 10px;">
+			<h1 id="buttonText" style="color:black; margin-bottom:-10px; margin-top:10px;">
+				Foods
+			</h1>
+			<div class="line"  style = "margin-top: 0px;">
+				<div>
+					<p id="textText" style = "margin-left: 50px; margin-right:50%; color: black; font-size: 15px;">
+						In many regions, especially in the north of the Netherlands, people enjoy seasonal autumn foods such as erwtensoep (a thick pea soup made with sausage and vegetables) or stamppot (a hearty mashed potato dish mixed with greens like kale or sauerkraut). Some other common foods are.
+					</p>
+					<ul id="listText" style="margin-right:80%; text-align: left; color: black;">
+						<li>Goose or Duck</li>
+						<li>Crab and Saltfish</li>
+						<li>Glühwein (mulled wine)</li>
+					</ul>
+				</div>
+				<p id="imgText" style = "margin-right: 50px; margin-top: -50px; color: black;">
+					<img src="foodimg.jpg" style="margin-top:40px; margin-right:30px; border:none;">
+				</p>
+			</div>
+		</button>
+	</div>
+
+	<a href ="PumpkinDrawing.html" style="color:darkgoldenrod">Spooky pumpkins</a>
+
+<body>
+
+</html>
