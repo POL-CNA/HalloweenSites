@@ -1,0 +1,69 @@
+
+body {
+      background-color: #0004ff;  }
+    
+ h1{
+    font-family: "Freckle Face", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: antiquewhite;
+}
+    
+
+.stem{
+    background-color:brown ;
+    width: 30px;
+    height:50px;
+    position: absolute;
+    top: 200px;
+    left: 215px;
+}
+
+.orangebody {
+    background-color: orange;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    border-radius: 35%;
+    box-shadow: 15px 15px 5px 3px rgba(255, 0, 0, 0.2);
+}
+
+.eye1{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    left: 105px;
+}
+
+.eye2{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    left: 330px;
+}
+
+.nose{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 370px;
+    left: 225px;
+}
+
+.mouth{
+    background-color: black;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 440px;
+    left: 100px;
+    border-radius: 35%;
+    box-shadow: 12px 12px 2px 1px rgba(255, 0, 0, 0.2);
+}

@@ -1,0 +1,28 @@
+html
+
+{
+       background-color: black;
+}
+body
+{
+       background-color: black; 
+       color: white;
+       margin: 100px;
+       border: 25px;
+
+}
+
+ h1{
+              font-family: "Freckle Face", system-ui;
+              font-weight: 400;
+              font-style: normal;
+ }
+ h2{
+       color: white;
+}
+
+
+
+
+
+
