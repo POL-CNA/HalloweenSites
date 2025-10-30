@@ -1,0 +1,33 @@
+html
+{
+            background-image:url(Background.gif);
+            background-size:cover;
+
+}
+
+body
+{
+           background-color: rgb(0, 0, 0);
+           color:orange;
+           margin: 50px;
+           padding: 50px;
+           border-style: inset;
+           
+          
+
+}
+ .metal-mania-regular {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color:orange;
+}
+
+h2 {
+  color:orange;
+}
+ 
+
