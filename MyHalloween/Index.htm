@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <title>Halloween</title>
+    <link rel="stylesheet" href = "stylesheet.css">
+</head>
+
+
+<body>
+    <h1>10/31/?? - Samhain</h1>
+    <h2 class="fire-text">
+        <a href="Drawing.html">The fire burned in the middle of the clearing.</a>
+      </h2>
+      
+
+    <p class="fade-in" style="animation-delay: 0s;">
+        In the spirit of Samhain, the Irish Halloween tradition which is largely accredited to be the father of American Halloween, many light bonfires and wear costumes. You decided to go for a walk when you saw a plume of smoke.. 
+    </p>
+    <p class="fade-in" style="animation-delay: 0s;">
+        Perhaps an opportunity to make some friends?
+    </p>
+
+    <p class="fade-in" style="animation-delay: 5s;">
+        As you watched from afar, five people silently stood around it, each donning their own unique mask. They haven't noticed you.
+    </p>
+    
+    <p class="fade-in" style="animation-delay: 11s;">One mask was a blue striped bag with crude facial features that seemed glued on.</p>
+    <img src="Assets/Masks/bagmask.png" alt="Bag Mask" width="150" class="fade-in" style="animation-delay: 11s;" onclick="maskClicked(this)">
+
+    <p class="fade-in" style="animation-delay: 16s;">Another was a mask made by layers of foliage.</p>
+    <img src="Assets/Masks/druidmask.png" alt="Druid Mask" width="150" class="fade-in" style="animation-delay: 16s;" onclick="maskClicked(this)">
+
+    <p class="fade-in" style="animation-delay: 22s;">Next in line was an almost comical traditional ghoul mask.. looks like somebody did some last-minute shopping.</p>
+    <img src="Assets/Masks/ghoulmask.png" alt="Ghoul Mask" width="150" class="fade-in" style="animation-delay: 22s;" onclick="maskClicked(this)">
+
+    <p class="fade-in" style="animation-delay: 27s;">This one caught your eye.. lavish golden ornaments hang off the grinning mask.</p>
+    <img src="Assets/Masks/regalmask.png" alt="Regal Mask" width="150" class="fade-in" style="animation-delay: 27s;" onclick="maskClicked(this)">
+
+    <p class="fade-in" style="animation-delay: 33s;">And last, but certainly not least, some sort of stone material with what you can only presume to be blood baked onto it. The man wearing it has a bit of a hunchback.</p>
+    <img src="Assets/Masks/weirdmask.png" alt="Weird Mask" width="150" class="fade-in" style="animation-delay: 33s;" onclick="maskClicked(this)">
+
+    <script>
+        let clicksAllowed = false;
+        
+        // fire sfx
+        document.addEventListener("click", function startMusic() {
+            var music = new Audio("Assets/FireSFX.mp3");
+            music.loop = true;
+            music.play();
+            document.removeEventListener("click", startMusic); // only receive click once
+        });
+
+        function maskClicked(img) {
+            if (!clicksAllowed) return;
+            clicksAllowed = false;
+
+            const choice = img.alt; // identifies which mask was clicked
+            document.querySelectorAll("img").forEach(i => i.classList.remove("clickable"));
+
+            // go to the mask's specific page
+            let redirectPage = "";
+
+            switch (choice) {
+                case "Bag Mask":
+                    redirectPage = "bagmask.html";
+                    break;
+                case "Druid Mask":
+                    redirectPage = "druidmask.html";
+                    break;
+                case "Ghoul Mask":
+                    redirectPage = "ghoulmask.html";
+                    break;
+                case "Regal Mask":
+                    redirectPage = "regalmask.html";
+                    break;
+                case "Weird Mask":
+                    redirectPage = "weirdmask.html";
+                    break;
+                default:
+                    redirectPage = "Drawing.html"; // fallback
+            }
+
+        // Redirect to the chosen page
+        window.location.href = "MaskSites/"+redirectPage;
+    }
+
+
+        // start dialogue option
+        setTimeout(() => {
+            // popup
+            const walkUp = confirm("You watch the masked figures for a moment...\n\nDo you LEAVE them alone? (Cancel)\nOr WALK UP to them? (OK)");
+
+            if (!walkUp) {
+                alert("You quietly fade back into the woods...");
+                window.close(); // closes tab 
+                return;
+            }
+
+            alert("You step into the firelight. The figures turn toward you.\nOne asks, 'Which mask is your favorite?'");
+
+            // give the masks the clickable tag
+            clicksAllowed = true;
+            document.querySelectorAll("img").forEach(img => img.classList.add("clickable"));
+        }, 42000);
+
+    </script>
+</body>
+</html>

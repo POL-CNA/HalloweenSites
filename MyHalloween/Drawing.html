@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Art</title>
+    <link rel="stylesheet" href = "stylesheet.css">
+    <link rel="stylesheet" href = "drawsheet.css">
+</head>
+
+<script>
+    //fire sfx
+    document.addEventListener("click", function startMusic() {
+        var music = new Audio("Assets/FireSFX.mp3");
+        music.loop = true;
+        music.play();
+        document.removeEventListener("click", startMusic); // only receive click once
+      });
+</script>
+
+<body> 
+    <h1>My Lovely Gourd</h1>
+    <div class = "stem"></div>
+    <div class = "orangebody glow"></div>
+    <div class = "eye left-eye flicker" ></div>
+    <div class = "eye right-eye flicker"></div>
+    <div class = "nose flicker"></div>
+    <div class = "mouth flicker"></div>
+
+    
+</body>
+
