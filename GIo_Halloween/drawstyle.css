@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0b0b25 0%, #000010 80%);
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Comic Sans MS", cursive;
+}
+
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.moon {
+  position: absolute;
+  top: 80px;
+  right: 120px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #fffbe6 60%, #fef4b8 90%);
+  border-radius: 50%;
+  box-shadow: 0 0 60px 20px rgba(255, 255, 200, 0.3);
+}
+
+
+.stars::before, .stars::after {
+  content: "✨✨✨✨✨✨✨✨";
+  position: absolute;
+  color: rgba(255,255,255,0.8);
+  font-size: 1.2em;
+  top: 20px;
+  left: 40px;
+}
+
+
+.pumpkin {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 250px;
+  background: radial-gradient(circle at 30% 30%, #ff9900, #cc6600 80%);
+  border-radius: 50% / 55%;
+  box-shadow: inset -10px 0 #cc5500, inset 10px 0 #cc5500;
+}
+
+
+.stem {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 50px;
+  background: linear-gradient(to bottom, #3b2f00, #654321);
+  border-radius: 5px;
+}
+
+
+.leaf {
+  position: absolute;
+  top: -20px;
+  left: 160px;
+  width: 30px;
+  height: 20px;
+  background: radial-gradient(circle at center, #2e8b57, #145a32);
+  border-radius: 50%;
+  transform: rotate(-30deg);
+}
+
+
+.eye {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  background-color: black;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  top: 70px;
+}
+
+.eye.left {
+  left: 80px;
+}
+
+.eye.right {
+  right: 80px;
+}
+
+
+.nose {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+
+.mouth {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 60px;
+  background-color: black;
+  border-radius: 0 0 40px 40px;
+}
+
+
+.ghost {
+  position: absolute;
+  right: 200px;
+  bottom: 150px;
+  width: 80px;
+  height: 100px;
+  background: white;
+  border-radius: 40px 40px 10px 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+  animation: float 3s ease-in-out infinite;
+}
+
+.ghost .eyes {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  width: 40px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ghost .eyes::before,
+.ghost .eyes::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+
+.ghost .tail {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15px;
+  background: white;
+  border-radius: 50% 50% 0 0;
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
