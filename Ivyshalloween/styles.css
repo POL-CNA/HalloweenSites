@@ -1,0 +1,122 @@
+     
+.credit {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgb(255, 153, 0);
+}
+
+
+body {
+    background-color: rgb(102, 25, 102);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(224, 37, 37, 0.1);
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 2px 5px 8px rgb(255, 153, 0);
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+
+.activities,
+.story-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.activities .text,
+.story-footer .text {
+    flex: 1;
+    text-align: left;
+}
+
+.activities .image,
+.story-footer .image {
+    flex: 0 0 300px;
+}
+
+.activities img,
+.story-footer img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+.hover-zoom {
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+@keyframes candleFlicker {
+    0% { filter: drop-shadow(0 0 10px rgb(231, 177, 126)); }
+    50% { filter: drop-shadow(0 0 30px rgb(255, 200, 80)); }
+    100% { filter: drop-shadow(0 0 10px rgb(255, 170, 50)); }
+}
+
+.activities img:hover,
+.story-footer img:hover,
+.hover-zoom:hover {
+    transform: scale(1.08);
+    animation: candleFlicker 0.7s infinite ease-in-out;
+}
+
+
+header .image {
+    display: flex;
+    justify-content: center;
+}
+
+
+.story-footer .text {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    font-size: 0.9em;
+}
+.large{
+    height: 400px;
+}
