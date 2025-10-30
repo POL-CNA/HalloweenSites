@@ -1,0 +1,19 @@
+body{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background: url("HalloweenBackground.gif")no-repeat center right fixed;
+    background-size:cover
+}
+
+.side-img{
+  position: fixed;
+  top: 50%;
+  right: 500px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+}
