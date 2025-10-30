@@ -1,0 +1,14 @@
+body{
+   background-color:rgb(0, 217, 255);
+
+}
+
+ H1 {
+                        font-family: "creepster", system-ui;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 35pt;
+ }
+ p{
+         font-size:18pt;
+ }
