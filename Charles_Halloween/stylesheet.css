@@ -1,0 +1,19 @@
+html
+{
+        background-color: black;
+}
+
+body
+{
+    background-color: rgb(207, 117, 0);
+    color: white;
+    margin: 100px;
+    padding: 25px;
+    border-style: inset;
+}
+
+h1, h2, p, ol {
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
