@@ -1,0 +1,84 @@
+body {
+    background-image: url('https://64.media.tumblr.com/f02293b6f3d9eede3a91d632f7594334/tumblr_omgitg79JA1t147ouo1_400.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f5f5f5;
+    display: flex;
+    margin: 0 auto;
+    font-size: 17pt;
+    }
+    
+    h1, h2, h3 {
+      color: #ff6600;
+    }
+    
+    p {
+      color: white;
+      padding-left: 20px;
+      font-size: 13pt;
+      font-family: serif;
+    }
+    
+    h1:hover, h2:hover, h3:hover {
+      color: #ffa500;
+      text-shadow: 0 0 20px #ffa500;
+    }
+    
+    img {
+      border: 5px solid #ff6600;
+      box-shadow: 0 0 20px #ff0000;
+      display: block;
+      margin: 20px auto;
+      float: left;
+    }
+    
+    .jacquard {
+      font-family: "Jacquard 12", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .consent {
+      font-family: "Manufacturing Consent", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .med {
+      height: 100px;
+    }
+    
+    .box {
+      border: 5px solid orangered;
+      padding: 20px;
+      margin: auto;
+      width: 70%;
+      background-color: navy;
+    }
+
+    .linksbox {
+      border: 5px solid orangered;
+      padding: 20px;
+      margin: auto;
+      width: 70%;
+      background-image: url(https://media.istockphoto.com/id/942384290/photo/ruined-abandoned-church.jpg?s=612x612&w=0&k=20&c=etJuXnm_GqpibkyEzxmmZtna-2tNb6CkM5q8C6JztWs=);
+    }
+
+        a:link {
+          color: #0000FF;
+      }
+  
+      a:visited {
+          color: orange;
+      }
+  
+      a:hover {
+          color: #FF0000;
+          text-decoration: underline;
+      }
+  
+      a:active {
+          color: #FFFF00;
+      }
