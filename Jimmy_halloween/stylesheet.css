@@ -1,0 +1,63 @@
+
+body{
+  background-color: rgb(3, 3, 3);
+  font-family:serif;
+  margin: 100px ;
+}
+
+h1{
+  color: rgb(165, 19, 19);
+  font-size:3.67rem;
+  font-family:Chiller, sans-serif
+}
+
+p{
+    font-size:1.8rem;
+    font-family:serif;
+    color: rgb(254, 93, 93)
+}
+
+
+ol{
+
+
+color: rgb(165, 19, 19);
+
+}
+
+
+
+h2{
+
+
+  font-size:3.67rem; font-family:Chiller, sans-serif;
+color: rgb(165, 19, 19);
+
+
+}
+
+
+
+li{
+font-size:1.8rem ;
+font-family:serif ;
+color: rgb(165, 19, 19);
+
+}
+
+
+.image_med{
+  height: 200px;
+  float: left;
+  padding: 0px 20px 0px 0px;
+
+}
+.image_size{
+  height: 200px;;
+  width: 200px;
+  float: right;
+}
+button{
+background-color: black;
+  color: brown;
+}
