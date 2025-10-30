@@ -1,0 +1,68 @@
+body {
+    background-image: url('https://64.media.tumblr.com/f02293b6f3d9eede3a91d632f7594334/tumblr_omgitg79JA1t147ouo1_400.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f5f5f5;
+    display: flex;
+    margin: 0 auto;
+    font-size: 17pt;
+    }
+
+.box {
+    border: 5px solid orangered;
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+    background-color: navy;
+  }
+
+.stem {
+    background-color: brown;
+    width: 38px;
+    height: 50px;
+    position:absolute;
+    left: 190px;
+    top: 105px;
+}
+
+.orangebody {
+    background-color: orange;
+    height: 300px;
+    width: 400px;
+    position:absolute;
+    top: 150px;
+    border-radius: 90% 90% 70% 70%;
+    box-shadow: 0 0 5000px red;
+}
+
+.eye1 {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    top: 200px;
+    left: 80px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.eye2 {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    top: 200px;
+    left: 280px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.mouth {
+    background-color: black;
+    height: 50px;
+    width: 300px;
+    position:absolute;
+    top: 350px;
+    left: 55px;
+    clip-path: polygon(0% 0%, 10% 50%, 20% 20%, 30% 50%, 40% 50%, 50% 20%, 60% 50%, 70% 50%, 80% 20%, 90% 50%, 100% 0%, 80% 100%, 20% 100%);
+}
