@@ -1,0 +1,59 @@
+body{
+    background: url(graveyard.webp) no-repeat center bottom fixed; 
+    background-size: cover ;
+
+}
+.stem{
+    background-color: brown;
+    width: 30px;
+    height: 50px;
+    position:absolute;
+    top:220px;
+    left:920px;
+}
+.orangebody{
+    background-color:orange;
+    height: 300px;
+    width: 400px;
+    position:absolute;
+    top:265px;
+    left:743px;
+    border-radius: 60% 60% 35% 35%;
+    box-shadow: 0 0 100px hsl(36, 100%, 38%);
+}
+.eye1{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    top:310px;
+    left:830px;
+    clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.eye2{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    top:310px;
+    left:990px;
+    clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.mouth{
+    background-color: black;
+    width: 300px;
+    height:80px;
+    position:absolute;
+    top:470px;
+    left:790px;
+    clip-path:polygon(2%39%,18%3%,35%39%,49%1%,64%42%,73%0%,85%42%,92%1%,99%39%,87%79%,57%79%,28%69%,15%67%,11%71%);
+}
+.nose{
+    background-color:black;
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:380px;
+    left:915px;
+    clip-path:polygon(50% 0%, 0% 100%, 100% 100%)
+}
