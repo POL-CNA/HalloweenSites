@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Halloween</title>
+  <style>
+    /* --- General Page Styles --- */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left;
+      margin: 0;
+      padding: 40px;
+      background: #000;
+      color: #fff;
+    }
+
+    h1, h2 {
+      color: #ff6600;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: square;
+      color: #ff9933;
+      text-align: left;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    p {
+      max-width: 750px;
+      margin: 15px auto;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 320px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #ff9933;
+    }
+
+    /* --- Pumpkin Drawing --- */
+    .pumpkin {
+      position: relative;
+      width: 320px;
+      height: 280px;
+      margin: 60px auto;
+    }
+
+    .stem {
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-10deg);
+      width: 28px;
+      height: 40px;
+      background: #6b3f00;
+      border-radius: 6px;
+    }
+
+    .orangebody {
+      position: absolute;
+      top: 34px;
+      left: 0;
+      width: 100%;
+      height: 220px;
+      background: linear-gradient(180deg, #ff9c2f 0%, #ff7a00 60%);
+      border-radius: 50% / 45%;
+    }
+
+    .eye {
+      position: absolute;
+      top: 95px;
+      width: 64px;
+      height: 64px;
+      background: #000;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .eye-left {
+      left: 58px;
+    }
+
+    .eye-right {
+      right: 58px;
+    }
+
+    .mouth {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 46px;
+      width: 180px;
+      height: 64px;
+      background: black;
+      clip-path: polygon(
+        0 35%, 8% 100%, 18% 35%, 26% 100%, 36% 35%,
+        50% 100%, 64% 35%, 72% 100%, 82% 35%, 92% 100%, 100% 35%
+      );
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎃 Happy Halloween 🎃</h1>
+
+  <ul>
+    <li>Mount Tabor hosts Portland’s crazy Soapbox Derby.</li>
+    <li>Tualatin holds the Giant Pumpkin Regatta each fall.</li>
+    <li>Some say Benny “Gourdman” Price still haunts the races.</li>
+  </ul>
+
+  <p>Portland, Oregon has a talent for turning chaos into tradition. Every summer, Mount Tabor Park hosts the Adult Soapbox Derby, where locals race homemade cars down a steep hill in wild costumes. Since 1997, it’s been less about winning and more about creativity — people show up with vehicles shaped like tacos, sharks, and rockets, cheered on by thousands.</p>
+
+  <p>Not far away, in Tualatin, the West Coast Giant Pumpkin Regatta takes things even further. Every fall, racers climb into hollowed-out pumpkins — some weighing over a thousand pounds — and paddle them across a lake. Costumes, splashes, and laughter fill the day as the city celebrates pure, pumpkin-powered chaos.</p>
+
+  <p>The legend of Benny “Gourdman” Price isn’t a true Portland ghost story, but it feels like it could be. It captures the city’s mix of humor, DIY spirit, and Halloween weirdness. After all, if any place would be haunted by a pumpkin racer who never finished the race… it’d be Portland.</p>
+
+  <img src="pic2.jpg" alt="Soapbox pumpkin car">
+
+  <h2>Scary Story</h2>
+  <p>Every October, Mount Tabor Park turns into glorious chaos for the Adult Soapbox Pumpkin Race — a downhill event where adults with duct tape, bad ideas, and too much cider race pumpkins on wheels. The rules are simple: it has to be a real pumpkin, it has to roll, and you have to be brave enough to ride it down a hill slick with leaves and cider spills.</p>
+
+  <p>But every year, as the sun sets and fog drifts through the park, people whisper about Benny “Gourdman” Price. Back in 2016, he built the most aerodynamic gourd in Oregon — polished rind, wooden wheels, orange duct-tape suit. He yelled “Gourd speed!” and vanished mid-race. No crash. No splatter. Just his glove and glowing orange skid marks.</p>
+
+  <p>Now racers say when the final heat runs and the fog gets thick, you can still hear him whispering through the trees — “Goooord speeeeeed…”</p>
+
+  <!-- 🎃 The Pumpkin -->
+  <div class="pumpkin">
+    <div class="stem"></div>
+    <div class="orangebody"></div>
+    <div class="eye eye-left"></div>
+    <div class="eye eye-right"></div>
+    <div class="mouth"></div>
+  </div>
+
+  <footer>Created by AI 🎃</footer>
+
+</body>
+</html>

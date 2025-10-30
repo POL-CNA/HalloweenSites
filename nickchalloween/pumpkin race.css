@@ -1,0 +1,91 @@
+/* --- Page Styling --- */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+  background: #000;
+  color: #fff;
+}
+
+h1 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: square;
+  color: #ff9933;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+p {
+  max-width: 750px;
+  margin: 15px auto;
+  line-height: 1.6;
+  color: #fff;
+}
+
+img {
+  width: 320px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+footer {
+  margin-top: 40px;
+  color: #ff9933;
+}
+
+/* --- 🎃 Pumpkin Drawing --- */
+.pumpkin {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: 60px auto;
+}
+
+.stem {
+  background: brown;
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 185px;
+  border-radius: 5px;
+}
+
+.orangebody {
+  background: orange;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  border-radius: 50% / 45%;
+}
+
+.eye1, .eye2 {
+  background: black;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 120px;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.eye1 { left: 100px; }
+.eye2 { right: 100px; }
+
+.mouth {
+  background: black;
+  width: 220px;
+  height: 80px;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon( 0 50%,10% 100%,20% 50%,30% 100%,40% 50%,50% 100%,60% 50%,70% 100%,80% 50%, 90% 100%,100% 50%,100% 100%,0 100% );
+}
