@@ -1,0 +1,17 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, rgb(175, 223, 247), hsl(320 40% 20%));
+  background-attachment: fixed;
+  transition: background 1s linear;
+}
+
+    
+    h1 {
+      font-family: "Macondo Swash Caps", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+   
