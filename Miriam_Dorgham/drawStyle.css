@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(128, 80, 128);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: blueviolet;
+    border: 12px solid rgb(151, 97, 97); height:900px ;
+    background:url(spooky-halloween-background-free-photo.jpg)no-repeat center bottom fixed;
+    background-size: cover;
+    
+    
+
+}
+
+.stem {
+    background-color: brown;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 215px;
+     
+    
+}
+
+.orangebody {
+    background-color: orange;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.eye1 {
+    background-color: purple;
+width:50px;
+height:50px;
+position: absolute;
+top: 170px;
+left: 140px;
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.eye2 {
+    background-color: purple;
+   width:50px;
+   height:50px;
+   position: absolute;
+   top: 170px;
+   left: 270px;
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.mouth {
+background-color: purple;
+width: 50px;
+height:50px;
+position: absolute;
+top:320px;
+left: 180px;
+width:120px;
+border-radius: 35%;
+clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.nose{
+ background-color: purple;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:240px;
+  left: 200px;
+  width:80px;
+  border-radius: 15%;  
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+.pumpkin {
+    top: 300px;
+}
+
+.grass {
+    background-color: rgb(21, 156, 21);
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 390px;
+    left: 20px;
+    width: 490px;
+}
+
+.moon {
+    background-color: yellow;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    left: 390px;
+    width: 90px;
+    border-radius: 15%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.moon2 {
+    background-color: yellow;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 500px;
+    left: 290px;
+    width: 90px;
+    border-radius: 15%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.moon3 {
+    background-color: yellow;
+    width: 30px;
+    height: 100px;
+    left: 300px;
+    width: 75px;
+    border-radius: 15%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
