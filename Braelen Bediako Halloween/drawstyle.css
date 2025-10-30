@@ -1,0 +1,68 @@
+body {
+    background: url("pumpkindudes.gif");
+    background-size: cover;
+    color: white;
+}
+
+.stem {
+    background-color: brown;
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    top: 200px;
+    left: 390px;
+}
+
+.orangebody {
+    background-color: orange;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+
+.eye1 {
+    background-color: black;
+    border: solid 0em;
+    padding: 10px;
+    border-color: white;
+    border-width: 20px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    left: 275px;
+
+}
+
+.eye2 {
+    background-color: black;
+    border: solid 0em;
+    padding: 10px;
+    border-color: white;
+    border-width: 20px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 310px;
+    left: 500px;
+
+}
+
+.mouth {
+    background-color: black;
+    height: 75px;
+    width: 300px;
+    position: absolute;
+    position: absolute;
+    top: 450px;
+    left: 275px;
+}
+.nose {
+    background-color: black;
+    height: 75px;
+    width: 60px;
+    position: absolute;
+    visibility: hidden;
+}
