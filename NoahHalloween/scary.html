@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html {
+            background-color: black;
+        }
+        #image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mo {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <audio src="/assets/audio/jumpscare.mp3" id="audio" loop></audio>
+    <div id="image">
+        <img src="/assets/image/jumpscare.png" alt="IT'S THE MO" id="mo">
+    </div>
+</body>
+<script>
+    const audio = document.getElementById('audio');
+    audio.playbackRate = 0.1;
+    audio.play();
+</script>
+</html>
