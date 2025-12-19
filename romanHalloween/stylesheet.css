@@ -1,0 +1,112 @@
+body
+{
+	background-color: black;
+	color: red;
+	margin: 50px;
+	padding: 10px;
+}
+
+h1 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+	font-size: 18pt;	
+}
+
+p{
+	font-size: 24pt;
+}
+
+.stem { 
+	background-color:brown;
+	width:40px; 
+	height:100px;
+}
+
+.orangebody { 
+	background-color:rgba(209, 108, 108, 0.5);
+	height:300px;
+	
+}
+
+.class {
+    background-color:brown;
+    width: 10px;
+    height: 50px;
+	position: absolute;
+	top: 100px;
+	left: 750px;
+	border
+} 
+
+.orangebody {
+	background-color:white;
+	height: 820px;
+	width: 900px;
+	position: absolute;
+	top:230px;
+	left:530px;
+	border-radius: 80%90%90%80%;
+	clip-path: polygon(50% 0%, 61% 18%, 71% 44%, 79% 72%, 83% 92%, 50% 100%, 14% 94%, 19% 69%, 24% 40%, 35% 19%);
+}
+
+.eye1 {
+	background-color:black;
+	height: 200px;
+	width: 150px; 
+	position:absolute;
+	top: 250px;
+	left:880px;
+	border-radius:50%30%;
+	clip-path: polygon(16% 34%, 40% 49%, 55% 62%, 0% 50%);
+}
+
+.eye2 { 
+	background-color: black;
+	height:105px; 
+	width: 110px; 
+	position:absolute;
+	top: 305px;
+	left: 960px;
+	border-radius:50%30%;
+	clip-path:polygon(76% 23%, 100% 50%, 24% 79%, 38% 51%);
+}
+
+.mouth {
+	background-color:black;
+	height: 150px;
+	width: 70px;
+	position:absolute;
+	top: 400px;
+	left: 920px;
+	border-radius:600%;
+}
+
+.hand1 {
+	background-color:black;
+	height: 350px;
+	width: 450px;
+	position:absolute;
+	top: 500px;
+	left: 950px;
+	border-radius:50%30%170%;
+	clip-path: polygon(49% 6%, 78% 31%, 100% 43%, 85% 49%, 57% 46%, 39% 33%, 43% 17%);
+}
+
+.hand2 {
+	background-color: black;
+	height: 280px; 
+	width: 700px;
+	position: absolute;
+	top: 500px;
+	left: 480px;
+	border-radius: 50%80%470%100%;
+	clip-path: polygon(59% 19%, 39% 48%, 22% 55%, 16% 46%, 33% 39%, 38% 35%, 47% 21%);
+}
+body{
+	background-image:url(gifka.gif);
+	background-size:cover;
+}
