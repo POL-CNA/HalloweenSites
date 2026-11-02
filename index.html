@@ -1,92 +1,86 @@
 <!DOCTYPE html>
-
-<head> 
-     <audio id="bgMusic" autoplay loop>
-    <source src="campfire.mp3" type="audio/mpeg">
-    </audio>
-     <meta charset="UTF-8">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Halloween</title>
-<link rel="stylesheet" href="stylesheet.css">
-
+  <title>Halloween | Student Websites</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f4f4f4; color: #222; font: 1rem/1.6 Arial, sans-serif; }
+    main { max-width: 1000px; margin: auto; padding: 24px; }
+    h1, h2 { line-height: 1.2; }
+    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .column { background: white; padding: 24px; border: 1px solid #ddd; border-radius: 8px; }
+    .column h2 { margin-top: 0; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: #843600; }
+    a:hover { text-decoration-thickness: 2px; }
+    .unavailable { color: #555; }
+  </style>
 </head>
-
 <body>
-
-<h1>The Lantern Beside the River</h1>  
-<div id="light"></div>
-  <div id="shade"></div>
-
- 
-     <script>
-    const light = document.getElementById("light");
-    const shade = document.getElementById("shade");
-
-    const RADIUS = 220; // size of the lit area
-
-    let targetX = window.innerWidth / 2;
-    let targetY = window.innerHeight / 2;
-    let x = targetX;
-    let y = targetY;
-
-    document.addEventListener("mousemove", (e) => {
-      targetX = e.clientX;
-      targetY = e.clientY;
-    });
-
-    function animate() {
-      x += (targetX - x) * 0.15;
-      y += (targetY - y) * 0.15;
-
-      // Move the glow (offset by half its size to center it)
-      light.style.transform = `translate(${x - 150}px, ${y - 150}px)`;
-
-      // Rebuild the shade gradient at the light's position
-      shade.style.background = `radial-gradient(
-        circle ${RADIUS}px at ${x}px ${y}px,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.6) 60%,
-        rgba(0, 0, 0, 0.8) 100%
-      )`;
-
-      requestAnimationFrame(animate);
-    }
-
-    animate();
-  </script>
-
-
-
-<img src = "coolguy.png" alt="CoolGuy" class="framed"> 
-<img src = "coolguy2.png" alt="CoolGuy2" class="framed"> 
-<img src = "pumpkin.png" alt="pumpkin" class="pumpkin"> 
-
-</style>
-<div class="para">
-<p>A Native American-inspired Halloween tale of respect, mystery, and courage</p>
-
-<p>Long ago, in a village beside a winding river, there lived a young boy named Mato. He loved listening to the stories told by the elders around the autumn fire. As the leaves turned gold and red and the nights grew longer, the elders spoke of a special evening when the veil between the ordinary world and the spirit world seemed thin. </p>
-
-<p>One chilly autumn night, Mato's grandmother handed him a small lantern made from a hollowed squash.
-"Stay on the forest path," she said. "And remember, not every spirit wishes to frighten you. Some simply wish to be remembered." Mato nodded and set out toward the river to gather reeds for the next day's celebration. The moon hung low and bright above the trees.</p>
-
-<p>As he walked, he noticed strange lights dancing among the branches. They flickered blue and silver, moving silently through the woods. Mato's heart began to race. He remembered stories of wandering spirits and tricksters.</p>
-
-<p>Suddenly, one of the lights drifted onto the path ahead of him. "Who are you?" Mato asked. The light swirled gently and transformed into the shape of an old woman wearing clothing from many generations ago. "I am a keeper of stories," the spirit said. "Few remember my name now." </p>
-
-<p>Mato wanted to run, but his grandmother's words echoed in his mind. "What story do you keep?" he asked. The spirit smiled. "I keep the story of kindness." She pointed across the river. There stood a giant oak tree. Beneath it rested a forgotten stone marker. The spirit explained that long ago travelers had stopped there for water and shelter, but over the years people had forgotten the place. </p>
-
-<p>"Will you help me remember?" she asked. Mato crossed the river and cleared away the fallen leaves covering the marker. As he worked, the moonlight brightened. One by one, the dancing lights appeared around him. They were not frightening spirits at all. They were memories: hunters, storytellers, children, and elders from long ago. They gathered quietly beneath the oak. </p>
-
-<p>When the marker was clean, the old woman nodded. "Now our stories will not be lost." The spirits began to fade with the coming dawn. Before disappearing, the keeper of stories touched Mato's lantern. The squash lantern glowed with a warm golden light. </p>
-
-<p>"Whenever you share a story with respect," she said, "this light will guide others." Mato returned home and told the elders everything that had happened. They listened carefully and then walked with him to the oak tree. From that year forward, every autumn the village visited the place, shared stories, and remembered the people who came before them. And some say that on crisp Halloween nights, if you walk quietly beside the river, you may see silver lights dancing among the trees, keeping watch over the stories that should never be forgotten. 
-
-<p>The End 🎃🍂✨</p>
-
-<p>Made with Chatgpt</p>
-</div>
-
-
+  <main>
+    <h1>Student Websites</h1>
+    <p>Halloween projects organized by graduating class.</p>
+    <div class="grid-container">
+      <section class="column" aria-labelledby="class-2027">
+        <h2 id="class-2027">Class of 2027</h2>
+        <p><a href="2027/index.html">Open the 2027 directory</a></p>
+        <ul>
+        <li><a href="2027/Halloween2025/index.html">Bright</a></li>
+        <li><a href="2027/PaxHalloween/Index.html">Pax</a></li>
+        <li><a href="2027/Eli_Halloween/Index.htm">Eli</a></li>
+        <li><a href="2027/Ty-halloween/index.html">Ty</a></li>
+        <li><a href="2027/NickRHalloween/Index.html">Nick R</a></li>
+        <li><a href="2027/Josh_Halloween/index.html">Joshua</a></li>
+        <li><a href="2027/Miriam_Dorgham/index.html">Miriam</a></li>
+        <li><a href="2027/Evan_Halloween/index.html">Evan</a></li>
+        <li><a href="2027/MoeHalloween/index.html">Mohammed</a></li>
+        <li><a href="2027/GIo_Halloween/index.html">Giovanni</a></li>
+        <li><a href="2027/Connor_Halloween/last%20broadcast/index.html">Connor</a></li>
+        <li><a href="2027/Shane_Halloween/index.html">Shane</a></li>
+        <li><a href="2027/Wyatt_halloween/index.html">Wyatt</a></li>
+        <li><a href="2027/Ivyshalloween/index.html">Ivy</a></li>
+        <li><a href="2027/DomsHalloween/index.html">Dominic</a></li>
+        <li><a href="2027/JonathanN-Halloween/index.html">Jonathan</a></li>
+        <li><a href="2027/nickchalloween/index.html">Nick C</a></li>
+        <li><a href="2027/Zacharias_Halloween/index.html">Zacharias</a></li>
+        <li><a href="2027/Jimmy_halloween/index.html">Jimmy</a></li>
+        <li><a href="2027/Husein_halloween/index.html">Husein</a></li>
+        <li><a href="2027/Charles_Halloween/index.html">Charles</a></li>
+        <li><a href="2027/Leon.vhalloween/index.html">Leon</a></li>
+        <li><a href="2027/Braelen%20Bediako%20Halloween/Index.html">Braelen</a></li>
+        <li><a href="2027/romanHalloween/index.html">Roman</a></li>
+        <li><a href="2027/NoahHalloween/index.html">Noah</a></li>
+        </ul>
+      </section>
+      <section class="column" aria-labelledby="class-2028">
+        <h2 id="class-2028">Class of 2028</h2>
+        <p><a href="2028/index.html">Open the 2028 directory</a></p>
+        <ul>
+        <li>Bright <span class="unavailable">(project not uploaded)</span></li>
+        <li><a href="2028/RoccoHalloween/index.html">Rocco</a></li>
+        <li>Vinny <span class="unavailable">(project not uploaded)</span></li>
+        <li><a href="2028/ahmadhalloween/index.htm">Ahmad</a></li>
+        <li>Charles <span class="unavailable">(project not uploaded)</span></li>
+        <li>Zack <span class="unavailable">(project not uploaded)</span></li>
+        <li>Alex <span class="unavailable">(project not uploaded)</span></li>
+        <li>Aiden <span class="unavailable">(project not uploaded)</span></li>
+        <li><a href="2028/CarterHalloween/index.html">Carter</a></li>
+        <li>Jake <span class="unavailable">(project not uploaded)</span></li>
+        <li>Edwin <span class="unavailable">(project not uploaded)</span></li>
+        <li>Emily <span class="unavailable">(project not uploaded)</span></li>
+        <li><a href="2028/Rezkallah_Halloween/index.htm">Rezkallah</a></li>
+        <li>Matthew <span class="unavailable">(project not uploaded)</span></li>
+        <li>Paddy <span class="unavailable">(project not uploaded)</span></li>
+        <li>Tanner <span class="unavailable">(project not uploaded)</span></li>
+        <li>Michael <span class="unavailable">(project not uploaded)</span></li>
+        <li><a href="2028/DragosHalloween/index.html">Dragos</a></li>
+        <li>Samuel <span class="unavailable">(project not uploaded)</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
