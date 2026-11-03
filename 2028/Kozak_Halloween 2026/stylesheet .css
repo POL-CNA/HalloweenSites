@@ -1,0 +1,12 @@
+h1{color: darkred;
+font-size: 40pt;
+font-weight: 200;
+font-style: italic;
+text-align: center;
+margin: auto;
+background-image: image();
+font-style: inherit;
+}
+body{
+    color: white;
+}
