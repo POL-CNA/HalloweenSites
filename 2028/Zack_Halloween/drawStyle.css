@@ -1,0 +1,51 @@
+.stem{
+    background-color: green;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 220px;
+}
+.orangebody{
+    background-color: orange;
+    width: 300px;
+    height: 400px;
+    top: 100px;
+    left: 170px;
+}
+.eye1{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 230px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.eye2{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.nose{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 250px;
+    left: 160px;
+}
+.mouth{
+    background-color: black;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: 300px;
+    left: 140px;
+   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
