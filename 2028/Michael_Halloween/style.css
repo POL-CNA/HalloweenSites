@@ -1,0 +1,80 @@
+/* Background setup to make the artwork pop */
+body {
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #ff861f;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 1. The Stem */
+.stem {
+    background-color: brown;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 235px;
+}
+
+/* 2. The Pumpkin Body with Rounded Shape and slide 22's exact Gradient colors */
+.orangebody {
+    background-image: linear-gradient(to right, #ff6a1f, #ff861f, #ff6a1f);
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    /* Slide 17 clockwise border-radius mapping */
+    border-radius: 60% 60% 35% 35%;
+}
+
+/* 3. Left Eye (Triangle Shape via slide 18 Clippy path) */
+.eye1 {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+    left: 130px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* 4. Right Eye (Triangle Shape via slide 18 Clippy path) */
+.eye2 {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+    left: 320px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* 5. Nose (Slide 21 optional piece added to center) */
+.nose {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 340px;
+    left: 235px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* 6. Mouth (Custom Jagged Polygon via slide 19 custom map) */
+.mouth {
+    background-color: black;
+    width: 260px;
+    height: 80px;
+    position: absolute;
+    top: 390px;
+    left: 120px;
+    clip-path: polygon(
+        0% 15%, 15% 40%, 30% 15%, 45% 40%, 50% 20%, 55% 40%, 70% 15%, 85% 40%, 100% 15%, 
+        90% 85%, 75% 60%, 60% 85%, 50% 65%, 40% 85%, 25% 60%, 10% 85%
+    );
+}

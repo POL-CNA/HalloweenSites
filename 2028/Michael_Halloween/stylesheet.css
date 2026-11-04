@@ -1,0 +1,26 @@
+
+body {
+    background-color: black;
+    margin: 70px;
+    border: 1px solid #030000;
+}
+
+h1{
+    color:blueviolet;
+    font-size:50pt;
+    margin:auto;
+    text-align: center;
+}
+
+p{
+    color:orange;
+    font-size: x-large;
+}
+
+div {
+    display: flex;
+    height: 550px;
+    justify-content: center;
+    border: 1px solid rgb(252, 250, 250);
+
+}
