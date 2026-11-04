@@ -1,0 +1,92 @@
+h1{
+    color:red;
+    border:4px solid orange;
+    padding:3px;
+    margin:auto;
+    width:fit-content;
+}
+p{
+    color:azure;
+    padding:5px;
+    margin:auto;
+    font-size:large;
+}
+b{
+    padding:5px;
+    margin:auto;
+    font-size:large;
+}
+img[src*="dont press.png"] {
+    transition: transform 0.8s;
+    position:relative;
+    left:250px;
+    filter:brightness(2)
+}
+img:hover[src*="dont press.png"] {
+    transform:scale(1.5);
+    filter:brightness(1.2);
+    transform: rotate(-3deg);
+}
+#scare img {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0.05);
+}
+#scare.go img { animation: fly 0.6s cubic-bezier(.2,.8,.2,1) forwards; }
+
+@keyframes fly {
+  0%   { transform: translate(-50%, -50%) scale(0.05); opacity: 0; }
+  100% { transform: translate(-50%, -50%) scale(5);    opacity: 1; }
+}
+#trigger { display: none; }
+
+.button {
+    position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);
+    font-size: 28px; font-weight: bold; color: #e11; background: #111;
+    border: 2px solid #e11; border-radius: 8px; padding: 18px 36px; cursor: pointer;
+  }
+#scare { position: fixed; inset: 0; background: #000; visibility: hidden; z-index: 10; overflow: hidden; }
+#scare img {
+    position: absolute; top: 50%; left: 50%;
+    width: 60vmin; height: auto;
+    transform: translate(-50%, -50%) scale(0.05); opacity: 0;
+    box-shadow: 0 0 0 rgba(238, 17, 17, 0);
+    font-size: 28px; font-weight: bold; color: #e11; background: #111;
+    border: 2px solid rgb(8, 8, 8); border-radius: 8px; padding: 18px 36px;
+    transition:
+      transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1),
+      box-shadow 0.4s ease,
+      background 0.4s ease,
+      color 0.4s ease;
+  }
+#trigger:checked ~ #scare { animation: show 2.5s forwards; }
+#trigger:checked ~ #scare img {
+    animation: fly 0.6s cubic-bezier(.2, .8, .2, 1) forwards,
+               shake 0.08s 0.6s 20 alternate;
+  }
+  @keyframes show { 0%, 96% { visibility: visible; } 100% { visibility: hidden; } }
+  @keyframes fly {
+    0%   { transform: translate(-50%, -50%) scale(0.05); opacity: 0; }
+    20%  { opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1.5);    opacity: 1; }
+  }
+  @keyframes shake {
+    from { transform: translate(-52%, -50%) scale(1.6); opacity: 1; }
+    to   { transform: translate(-48%, -51%) scale(1.48); opacity: 0.5; }
+  }
+  html {
+    min-height: 100%;
+    background-image: url("polaris.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  body {
+    position: relative;             
+    height: 900px;
+    margin: 25px 250px 0px 250px;               
+    border: 1px solid rgba(238, 17, 17, 0.5);
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
