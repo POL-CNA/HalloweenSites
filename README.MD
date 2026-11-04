@@ -46,7 +46,7 @@ The old root `index.htm` and `drawing.htm` redirect to Ahmad's complete project 
 | 2028 | Vinny | Not uploaded |
 | 2028 | Ahmad | `2028/ahmadhalloween/` |
 | 2028 | Charles | Not uploaded |
-| 2028 | Zack | Not uploaded |
+| 2028 | Zack | `2028/Zack_Halloween/` |
 | 2028 | Alex | Not uploaded |
 | 2028 | Aiden | Not uploaded |
 | 2028 | Carter | `2028/CarterHalloween/` |
