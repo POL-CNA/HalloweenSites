@@ -1,0 +1,113 @@
+body {
+    font-family: "creepster", cursive;
+}
+
+body{
+    color:aqua
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+h1{
+    color:rgb(255, 145, 0);
+    font-size: 32pt;
+    margin:auto;
+    text-align: center;
+    
+}
+html{
+    background: url("3ba0876e7f971ba78fb3b8b329003576.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.box {
+    width: 1500px;
+    height: 2200px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 0 auto;
+    background
+}
+
+html{
+    background-color: black;
+}
+
+h2 {
+    color: orange;
+    font-size: 30px;
+    border-bottom: 2px solid darkred;
+    padding-bottom: 10px;
+}
+.box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+body {
+    background-color: rgb(248, 248, 248, .10);
+}
+header{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding:20px;
+    border-bottom: 3px solid darked;
+}
+
+header h1 {
+    color: orange;
+    margin: 0 0 15px 0;
+    font-size: 45px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color:orange;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-bottom: 3px solid darkred;
+}
+
+#jumpscare {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumpscare video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    float: right;
+    margin: 0 0 20px 20px;
+}
