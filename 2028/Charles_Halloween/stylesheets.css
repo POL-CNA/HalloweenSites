@@ -1,0 +1,121 @@
+html {
+    background-color: black;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+/* the bordered box that holds everything */
+.box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
+    text-align: center;
+}
+
+p {
+    color: rgb(248, 245, 245);
+    margin: 0 0 18px;
+    font-size: 18px;
+}
+
+h1 {
+    color: rgb(248, 245, 245);
+    font-size: 28px;
+    margin: 0 0 10px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+h2 {
+    color: rgb(248, 245, 245);
+    font-size: 30px;
+    margin: 35px 0 5px;
+}
+
+.sub {
+    font-style: italic;
+    color: rgb(190, 190, 190);
+    margin-bottom: 30px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p1 {
+    display: block;
+    margin-top: 25px;
+    color: rgb(255, 0, 0);
+    font-style: italic;
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.growing-image {
+    width: 128px;
+    height: auto;
+    animation: grow-image 2.5s ease-in forwards;
+}
+
+@keyframes grow-image {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(8);
+    }
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(255, 0, 0);
+    margin: 35px auto;
+    width: 50%;
+}
+
+/* link as a button */
+a {
+    display: inline-block;
+    margin: 15px 0 5px;
+    padding: 12px 28px;
+    color: rgb(255, 0, 0);
+    background-color: black;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+a:hover {
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+
+/* smaller screens: less padding so text still fits */
+@media (max-width: 600px) {
+    .box {
+        padding: 30px 20px;
+    }
+}

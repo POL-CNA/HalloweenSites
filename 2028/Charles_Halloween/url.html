@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tunnel</title>
+    <link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+
+    <img id="creepyImage" src="smile-creepy.gif" alt="A creepy face appearing in the tunnel" class="growing-image">
+
+    <script>
+        const img = document.getElementById('creepyImage');
+
+        img.addEventListener('animationend', () => {
+       
+            img.src = 'creepy-creepypasta.gif'; 
+    
+            setTimeout(() => {
+                img.style.display = 'none'; 
+            }, 4000); 
+        });
+    </script>
+
+</body>
+</html>
+

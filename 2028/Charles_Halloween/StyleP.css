@@ -1,0 +1,64 @@
+.stem{
+    background-color: brown;
+    width: 30px;
+    height:50px;
+    position:absolute;
+    top:100px;
+    left:246px;
+}
+.stem{
+    background-color: saddlebrown;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    border-radius: 15px 5px 0 0;
+    transform: rotate(10deg);
+    transform-origin: bottom;
+}
+.orangebody{
+    background-color: orange;
+    width: 250px;
+    height: 230px;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+}
+
+.eye1{
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 165px;
+    left: 175px;
+}
+
+.eye2{
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 180px;
+    left: 230px;
+}
+
+.nose{
+    background-color: black;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 212px;
+    left: 208px;
+}
+
+.mouth{
+    background-color: black;
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    top: 235px;
+    left: 175px;
+    border-radius: 0 0 40px 40px;
+}

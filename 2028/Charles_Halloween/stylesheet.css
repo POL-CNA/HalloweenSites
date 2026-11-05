@@ -1,0 +1,138 @@
+html {
+    background-color: black;
+    background-size: cover;
+}
+
+p {
+
+    color:rgb(248, 245, 245);
+}
+h1{
+    color:rgb(248, 245, 245);
+    font-size:32;
+    margin:auto;
+    text-align: center;
+}
+h2 {
+    color:rgb(248, 245, 245);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p1 {
+    color:rgb(255, 0, 0);
+}
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color:rgb(255, 0, 0);
+}
+
+/* Small, simple touch-ups for index.htm only */
+body.story-page {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 20px 28px;
+    border: 2px solid darkred;
+    line-height: 1.6;
+    position: relative;
+    isolation: isolate;
+}
+
+body.story-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.72)),
+        url("075eb74eca4cb75163d83e77b743f998.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.story-page h1 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+body.story-page h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+body.story-page a {
+    display: table;
+    margin: 16px auto;
+    padding: 10px 18px;
+    border: 1px solid darkred;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    text-align: center;
+}
+
+body.story-page a:hover {
+    color: white;
+    background-color: darkred;
+}
+
+body.story-page img {
+    display: block;
+    margin: 18px auto;
+}
+
+body.story-page img.ghost-pop {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    width: min(45vw, 320px);
+    max-height: 65vh;
+    margin: 0;
+    border: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+body.story-page .screen-flash {
+    position: fixed;
+    inset: 0;
+    z-index: 4;
+    background: #000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+body.story-page .screen-flash.is-active {
+    animation: screen-flash 1.8s steps(1, end) both;
+}
+
+body.story-page img.ghost-pop.is-visible {
+    display: block;
+    animation: ghost-pop-in 3s ease-in-out both;
+}
+
+@keyframes ghost-pop-in {
+    0% { opacity: 0; scale: 0.85; }
+    12%, 72% { opacity: 1; scale: 1; }
+    100% { opacity: 0; scale: 1.18; }
+}
+
+@keyframes screen-flash {
+    0%, 100% { opacity: 0; }
+    4%, 16%, 29%, 43%, 58%, 72% { opacity: 1; background: #000; }
+    10%, 23%, 36%, 51%, 65%, 82% { opacity: 0.12; background: #000; }
+    91% { opacity: 0.75; background: #350000; }
+}
+
+@media (max-width: 600px) {
+    body.story-page {
+        margin: 12px;
+        padding: 16px;
+    }
+}
