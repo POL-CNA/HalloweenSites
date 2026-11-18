@@ -1,0 +1,210 @@
+body {
+    min-height: 100vh;
+    background-color: #0a0a18;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(107, 57, 145, 0.45), transparent 30%),
+        radial-gradient(circle at 85% 75%, rgba(190, 75, 25, 0.2), transparent 28%),
+        linear-gradient(160deg, #17132f 0%, #272047 55%, #10101f 100%);
+}
+.stem{
+    background-color:rgb(102, 18, 84);
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top:35px;
+    left:610px;
+    z-index: 1;
+    clip-path: polygon(100% 100%, 0% 100%, 50% 0%);
+}
+
+.orangebody{
+    background-color:orange;
+    height:250px;
+    width: 300px;
+    position: absolute;
+    top:325px;
+    left: 575px;
+    z-index: 0;
+    border-radius:60% 60% 35% 35%;
+}
+
+.eye1 {
+    background-color: black;
+    height:40px;
+    width:40px;
+    position:absolute;
+    top:375px;
+    left:625px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.eye2 {
+    background-color: black;
+    height:40px;
+    width:40px;
+    position:absolute;
+    top:375px;
+    left: 810px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.mouth1{
+    background-color: rgb(0, 0, 0);
+    height:50px;
+    width:150px;
+    position: absolute;
+    top:500px;
+    left:625px;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+
+}
+.mouth2{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width:150px;
+    position: absolute;
+    top:500px;
+    left:675px;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+.mouthpiece1{
+    background-color: black;
+    height:50px;
+    width:50px;
+    position: absolute;
+    top:500px;
+    left:700px;
+}
+.mouthpiece2{
+    background-color: orange;
+    height:20px;
+    width:20px;
+    position: absolute;
+    top:525px;
+    left:670px;
+}
+.mouthpiece3{
+    background-color: orange;
+    height:20px;
+    width:20px;
+    position: absolute;
+    top:533px;
+    left:720px;
+}
+.mouthpiece4{
+        background-color: orange;
+    height:15px;
+    width:20px;
+    position: absolute;
+    top:497px;
+    left:700px;
+}
+.mouthpiece5{
+        background-color: orange;
+    height:15px;
+    width:20px;
+    position: absolute;
+    top:497px;
+    left:770px;
+}
+.star1{
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    position: absolute;
+    top:250px;
+    left:650px;
+    z-index:2;
+
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+.star2{
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    position: absolute;
+    top: 100px;
+    left:690px;
+    z-index:2;
+
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+.star3{
+    width: 40px;
+    height: 40px;
+    background: yellow;
+    position: absolute;
+    top: 180px;
+    left:720px;
+    z-index:2;
+
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+.rim{
+    background-color: rgb(87, 15, 71);
+    width: 280px;
+    height: 40px;
+    position: absolute;
+    top: 300px;
+    left: 575px;
+    z-index: 1;
+
+}
+.nose{
+    background-color: black ;
+    width:15px;
+    height:25px;
+    position: absolute;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    top:420px;
+    left: 710px;
+}
+.nosepiece{
+    background-color:rgb(0, 0, 0);
+    width:15px;
+    height:25px;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+    top: 420px;
+    left:730px;
+}
+.wand{
+    background-color: rgb(92, 49, 13);
+    width: 20px;
+    height: 200px;
+    position: absolute;
+    top: 325px;
+    left: 925px;
+    rotate: 45deg;
+}
