@@ -1,0 +1,47 @@
+body {
+    background-image: url("Cedarforest.png");
+    background-size: cover;
+    color:#ffa500;
+    font-family: georgia, serif;
+    font-size: 19px;
+    padding: 20px;
+}
+
+h1{
+    color:rgb(#ffa600c9);
+    font-family:creester cursive;
+    font-size: 60px;
+    text-shadow: 3px 3px 6px black;
+}
+
+.story{
+    max-width: 750px;
+    padding: 20px;
+    background: #000B;
+    border-radius: 12px;
+    line-height: 1.8;
+
+}
+
+button {
+    background: #FF9A1F;
+    color: #15110F;
+    border: 1px solid #FFC266;
+    border-radius: 8px;
+    padding: 12px 22px;
+    margin: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #A52A1D;
+    color: white;
+}
+
+
+
+
+
