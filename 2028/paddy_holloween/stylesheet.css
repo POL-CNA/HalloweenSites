@@ -1,0 +1,54 @@
+html { 
+    background-color: rgb(241, 40, 40);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-bottom: 89px;
+    margin-left: 100px;
+    margin-right: 60px;
+    opacity:50%
+    ;
+}
+
+h1 {
+    border-style: solid;
+    border-color: rgb(119, 106, 106);
+    
+}
+  
+
+.img2{
+        margin-left: 550px;
+        margin:-top: 100px
+}
+img{
+    [src ="scary part two part one.avif"] 
+    left: 740px;
+}
+h1{
+    color:rgb(180, 21, 16);
+    text-align: center;
+    
+}
+p{
+     color :rgb(236, 142, 98);
+     font-size: 14pt;
+      margin-left: 10px;
+    margin-right: 10px
+}
+p.special{
+   text-align: center;
+   font-size: 52pt;
+    font-family: "Creepster", cursive; /* fallback font */
+  
+}
+
+.scarytwo{
+    margin-left: 100px;
+}
+.scratch.webp{
+     margin-top: 100px;
+
+}
