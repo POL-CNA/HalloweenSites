@@ -1,0 +1,37 @@
+.stem{
+    background-color: brown;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.orangebody{
+    background-color: orange;
+    width: 330px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+.eye1{
+    background-color: black;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    left: 118px;
+    top: 200px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.eye2{
+    background-color: black;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    left: 283px;
+    top: 200px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
